@@ -62,7 +62,7 @@ export async function POST(req) {
       messages: [
         {
           role: "system",
-          content: "Summarize this Japanese sales pitch transcript"
+          content: "Summarize this Japanese sales pitch transcript.Provide constructive feedback in Japanese."
         },
         {
           role: "user",
@@ -76,7 +76,7 @@ export async function POST(req) {
       messages: [
         {
           role: "system",
-          content: "Evaluate this Japanese sales pitch transcript. Consider tone, persuasiveness, clarity, and structure. Provide constructive feedback in Japanese."
+          content: "Evaluate this Japanese sales pitch transcript. Consider Japanese culture in business, tone, persuasiveness, clarity, and structure. Provide constructive feedback in Japanese."
         },
         {
           role: "user",
