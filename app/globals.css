@@ -5,17 +5,36 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --accent: #ef4444;
+  --accent-hover: #dc2626;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+.rhap_container {
+  background-color: white !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0.5rem !important;
+}
+
+.rhap_progress-filled {
+  background-color: var(--accent) !important;
+}
+
+.rhap_progress-indicator {
+  background: var(--accent) !important;
+}
+
+.rhap_button-clear {
+  color: var(--foreground) !important;
+}
+
+.rhap_time {
+  color: var(--foreground) !important;
 }
